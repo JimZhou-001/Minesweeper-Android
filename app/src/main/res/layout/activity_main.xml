@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/battlefield">
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FFA500"
+        android:text="退出游戏"/>
+
+    <Button
+        android:id="@+id/rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignLeft="@+id/exit"
+        android:layout_alignRight="@+id/exit"
+        android:layout_above="@+id/exit"
+        android:background="#FFA500"
+        android:text="规则说明"/>
+
+    <Button
+        android:id="@+id/soundSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignLeft="@+id/exit"
+        android:layout_alignRight="@+id/exit"
+        android:layout_above="@+id/rules"
+        android:background="#FFA500"
+        android:text="声音设置"/>
+
+    <Button
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignLeft="@+id/exit"
+        android:layout_alignRight="@+id/exit"
+        android:layout_above="@+id/soundSettings"
+        android:background="#FFA500"
+        android:text="难度选择"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignLeft="@+id/exit"
+        android:layout_alignRight="@+id/exit"
+        android:layout_above="@+id/difficulty"
+        android:background="#FFA500"
+        android:text="开始游戏"/>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/start"
+        android:textColor="#0000FF"
+        android:text="温馨提示：游戏界面可以滚动哦！"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tip"
+        android:src="@drawable/mine"
+        android:adjustViewBounds="true"/>
+
+</RelativeLayout>
